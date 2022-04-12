@@ -1,0 +1,284 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.35em;
+    color: #000000;
+}
+
+header {
+    height: 100vh;
+    background-image: url("../img/bg-3.jpg");
+    background-size: cover;
+    background-position: center bottom;
+
+    justify-content: space-between;
+
+    display: flex;
+}
+
+nav {
+    height: 100vh;
+    width: 437px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 66px;
+
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.1em;
+    align-items: center;
+    letter-spacing: -0.025em;
+
+    color: #f6f6f6;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 59px;
+
+    letter-spacing: -0.025em;
+    text-transform: uppercase;
+
+    margin-top: 20px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+
+    color: #605F5A;
+
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #D7B56D;
+}
+
+a:hover {
+    color: #cc9933;
+}
+
+section {
+    max-width: 1248px;
+    margin: 133px auto 0 auto;
+    padding: 0 24px;
+}
+
+article {
+    max-width: 300px;
+}
+
+.welcome {
+
+    display: flex;
+    align-items: center;
+    width: 615px;
+    margin-left: 30px;
+}
+
+.cta {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+
+    color: #D7B56D;
+}
+
+.cta:hover {
+    color: #cc9933;
+}
+
+.logo {
+    position: absolute;
+
+    top: 10vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.menu-items {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+
+    text-align: center;
+}
+
+.section-border {
+    border-top: 1px solid #000;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.section-heading {
+    display: block;
+    width: 300px;
+}
+
+.slider-nav {
+    display: flex;
+    align-items: center;
+}
+
+.arrows {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    float: right;
+}
+
+.section-content {
+    display: flex;
+}
+
+.block-description {
+    min-width: 380px;
+    max-width: 380px;
+    margin-right: 30px;
+}
+
+.slider {
+    display: flex;
+    overflow: visible;
+}
+
+.post-thumbnail {
+    width: 300px;
+    margin-right: 30px;
+}
+
+.post-thumbnail p {
+    margin-bottom: 20px;
+}
+
+.post-preview {
+    margin-bottom: 30px;
+}
+
+.section-content#about-me {
+    display: flex;
+    align-items: center;
+}
+
+.block-description#column {
+    padding-right: 15px;
+    border-right: 1px solid #BDBDBD;
+    margin-right: 73px;
+}
+
+.block-image {
+    height: 147px;
+    padding-right: 73px;
+    border-right: 1px solid #BDBDBD;
+    margin-right: 24px;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo-about {
+    border-radius: 0px 0px 30px 0px;
+}
+
+.facts {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 135%;
+
+    display: flex;
+}
+
+.facts-first-portion {
+    margin-right: 51px;
+}
+
+.facts p {
+    margin-bottom: 20px;
+}
+
+p#small-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 135%;
+}
+
+section#contacts {
+    border-top: 0px solid #000;
+    margin: 0 auto;
+    padding: 193px 0;
+}
+
+.contacts-container {
+    max-width: 1200px;
+    height: 425px;
+
+    background: url(../img/contacts-bg.jpg);
+    border-radius: 0px 0px 60px 0px;
+    filter: drop-shadow(0px 8px 24px rgba(114, 105, 24, 0.15));
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.column1-3 {
+    width: 380px;
+    /* background-color: red; */
+    color: white;
+    font-size: 24px;
+    line-height: 135%;
+    text-align: center;
+}
+
+.column1-3 a {
+    color: white;
+}
+
+.icons-set {
+    margin: 0 auto;
+    width: 263px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.no-overflow {
+    overflow: hidden;
+}

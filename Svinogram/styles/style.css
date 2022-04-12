@@ -1,0 +1,250 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    box-sizing: border-box; }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #fff;
+    letter-spacing: 0.02rem;
+
+    height: 95vh;
+    background-image: url("../img/bg-med.jpg");
+    background-size: cover;
+    background-position: center bottom;
+
+    overflow: hidden;
+}
+
+main {
+    margin: 0 auto;
+    position: relative;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 6.6rem;
+
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: normal;
+    align-items: left;
+
+    color: #f6f6f6;
+}
+
+h2 {
+    margin-bottom: 3.3rem;
+
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: normal;
+
+    color: #2c2c2c;
+}
+
+a {
+    color: #DD698C;
+    text-decoration: none;
+    margin-left: 3rem;
+}
+
+a:hover {
+    color: #ca5677;
+}
+
+header, main {
+    max-width: 112rem;
+    margin: 0 auto;
+}
+
+p {
+    text-align: left;
+}
+
+.header {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: space-between;
+}
+
+.header__menu-items {
+    margin-top: 3rem;
+}
+
+.header__logo {
+    max-width: 75%;
+}
+
+.heading-primary__blue {
+    color: #0075FF;
+}
+
+.heading-primary__red {
+    color: #C80101;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right__contents {
+    max-width: 41rem;
+    padding: 6rem 3rem;
+}
+
+.border-aquafresh {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right bottom, rgba(255,255,255,1) 0%, rgba(0,117,255,1) 50%, rgba(200,1,1,1) 100%)
+}
+
+.book__form {
+    padding: 4rem 3rem;
+    min-height: 37rem;
+}
+
+.form__group:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__input {
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: black;
+    padding: 1.2rem 2rem;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid transparent;
+    width: 29rem;
+    display: block;
+    transition: all .3s;
+}
+
+.form__input::-webkit-input-placeholder {
+    color: #999; 
+}
+
+.form__input:focus {
+    outline: none;
+    border-bottom: 3px solid #55c57a; 
+
+}
+
+.form__input:focus:invalid {
+    border-bottom: 3px solid #ff4f30; 
+}
+  
+/* .form__label {
+    margin: 0 auto;
+} */
+
+.btn, .btn:link, .btn:visited {
+    background-color: #DD698C;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+
+    padding: 1.5rem 4.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 2.5rem;
+
+    display: inline-block;
+    transition: all .2s;
+    position: relative; 
+}
+
+.btn:hover {
+    transform: translateY(-0.3rem);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; 
+}
+
+.btn:active, .btn:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+}
+
+.menu-btn, .menu-btn:link, .menu-btn:visited {
+    border-width: 0;
+    background: none;
+    
+    text-decoration: none;
+    margin-left: 3rem;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #DD698C;
+    letter-spacing: 0.02rem;
+
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    color: #ca5677;
+}
+
+/* .menu-btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; 
+} */
+
+.menu-btn:active, .menu-btn:focus {
+    outline: none;
+}
+
+.modal {
+    padding: 4rem;
+    width: 40%;
+    border: 0;
+    margin: 0 auto;
+
+    min-height: 15rem;
+    
+    text-align: center;
+
+    position: absolute;               /* 2 */
+    top: 50%;                         /* 3 */
+    transform: translate(0, -50%)
+  }
+  
+  .modal::backdrop {
+    background: rgb(0 0 0 / 0.7);
+  }
