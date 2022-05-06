@@ -220,7 +220,11 @@
     "node-sass": "^7.0.1"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "resolutions": { 
+    "glob-parent": "^6.0.1" 
   },
   "author": "Serhii Nadtochii",
   "license": "ISC",
