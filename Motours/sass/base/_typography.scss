@@ -4,13 +4,11 @@ body {
     /*font-size: 1.6rem;*/
     line-height: 1.7;
     color: $color-grey-dark;
-
-    padding: 3rem;
 }
 
 html {
     // This defines what REM is
-    font-size: 62.5%;
+    //font-size: 62.5%;
 }
 
 .heading-primary {
@@ -32,6 +30,11 @@ html {
         animation-timing-function: ease-out;
     
         /* animation-delay: 1s; */
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
     
     }
     
@@ -44,6 +47,10 @@ html {
         animation-name: moveInRight;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
     }
 }
 
@@ -58,6 +65,14 @@ html {
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);

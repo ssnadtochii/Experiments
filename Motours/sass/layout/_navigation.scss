@@ -19,6 +19,16 @@
 
         /* centering icon */
         text-align: center;
+
+        @include respond(tab-port) {
+            top: 2rem;
+            right: 4rem;
+        }
+
+        @include respond(phone) {
+            top: 2rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -35,7 +45,15 @@
 
         transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1); 
 
-        /* transform: scale(80); */
+        @include respond(tab-port) {
+            top: 2.5rem;
+            right: 4.5rem;
+        }
+
+        @include respond(phone) {
+            top: 2.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav {
