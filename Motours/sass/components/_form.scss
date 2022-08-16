@@ -2,6 +2,10 @@
 
     &__group:not(:last-child) {
         margin-bottom: 2rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 1rem;
+        }
     }
 
     &__input {
@@ -16,6 +20,10 @@
         width: 90%;
         display: block;
         transition: all .3s;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
 
         &::-webkit-input-placeholder {
             color: $color-grey-dark-2;
@@ -52,6 +60,11 @@
     &__radio-group {
         width: 47%;
         display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-label {
