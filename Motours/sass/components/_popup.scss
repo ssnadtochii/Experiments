@@ -8,8 +8,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba($color-black, .95);
+    background-color: rgba($color-black, .85);
     z-index: 4000;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
     &__content {
         @include absCenter;
